@@ -1,89 +1,64 @@
 # Algolia Solution Architecture Assignment
 
-This is the hiring assignment for the SA Team at Algolia. It’s intended to mimic work you might do here, while giving us an understanding of your skills in:
+##### [Live Demo](https://nicholasnguyen06.github.io/sa-assignment/ "Live Demo") 
 
-* Problem Solving  
-* Coding  
-* User Experience  
-* Communication  
+**Question 1: Hello,**
 
-If you want to know how we will judge the assignment, you can view our scoring rubric.  
+Im new to search engines, and there are a lot of concepts Im not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
 
-Please spend no more than 4 hours on this assignment, everything you need can be found in our public documentation.  
+Records Indexing I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
 
-Once done please host the front end on github pages (or an other tool we can access) and provide us a link to your demo along with the source code!  
+Cheers, George
 
-## Brief
+**Question 1 Answer:**
 
-### Part One - Technical Assignment (3.5 hrs)
+Hey George,
 
-Our customer Spencer and Williams want to implement a **_federated search experience_** which includes both products and **_query suggestions_** in the autocomplete they provided. They have asked for us to create a demo of this behaviour in their provided codebase.  
-  
-Spencer and Williams have provided the raw product data and have asked for us to create the suggestions using Algolias query suggestions feature.  
-  
-### Part Two - Questions (0.5 hrs)
+Hope you're having a great week so far, below I've attached definitons of each concept, as well as links to our internal documentation that go a little more in depth. 
+- [Records](https://www.algolia.com/doc/faq/basics/what-is-a-record/ "Records") - A record is an object you add to an index and want to search for. In short, it is a piece of data, whether a product, documentation, or other searchable thing you want your users to be able to find. 
+- [Index/Indexing](https://www.algolia.com/doc/api-client/methods/indexing/ "Index/Indexing")  - An index is the place where the data used by a search engine is stored, and indexing would be manipulating (adding, deletings, updating) said data into these indexes. 
+- [Custom Ranking]("https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/#custom-ranking" "Custom Ranking") - We have our standard rankings that include geo-location, proximity, typos, etc., but custom rankings add in new properties to suggest in an order. In the JSON payload for the data, you can include any attributes you would like, such as number of words, popularity scoring, dates, and more. These will help filter results to users to data that is even more relevant to their search.
 
-Please answer example customer questions in the questions directory.  
-  
-## Getting started
+Feel free to reach out to me if you have more questions, and I am more than happy enough to jump on a quick call and give you a quick overview.
 
-First you'll need to sign up for an Algolia account @ https://www.algolia.com/users/sign_up.  
-  
-You can find the product dataset in the data folder inside this repo. You will need to push this data to Algolia in your own application and connect the app to the dataset in both components.  
-  
-You can create a Query Suggestions index from your Algolia trial account following our documentation.  
+Cheers, Nick
 
-Everything you need to complete this assignment can be found on algolia.com/docs.  
-  
-## Running this repo
-  
-To run this project locally, install the dependencies and run the local server:  
-  
-```sh
-npm install
-npm start
-```
-  
-Alternatively, you may use [Yarn](https://http://yarnpkg.com/):  
-  
-```sh
-yarn
-yarn start
-```
-  
-Open http://localhost:3000 to see your app.  
-  
-## Scoring Rubric
-  
-### Technical Assignment
-  
-| Did the candidate: | Yes | No |
-| :------------- | :------------- | :------------- |
-| Follow the instructions of the assignment? | | |
-| Write code that follows best-practices? | | |
-| Avoid over-engineering? | | |
-| Demonstrate understanding of the code they wrote? | | |
-| Demonstrate good code and process organization? | | |
-| Craft a search experience that is simple to understand? | | |
-| Account for different use cases (e.g. mobile, touch) | | |
-| Complete the assignment in an efficient manner? | | |
-| Go beyond what was asked of them? | | | |
-| Ask for clarification when necessary? | | |
-| How long did the candidate spend on the assignment (in hours)? | | |
 
-### “Customer” Questions
 
-| Did the candidate: | Yes | No |
-| :------------- | :------------- | :------------- |
-| Answer the questions correctly? | | |
-| Answer in a succinct manner? | | |
-| Have minimal spelling, grammar, or formatting mistakes? | | |
-| Employ a friendly, helpful tone? | | | |
+------------
 
-### Overall Impressions
 
-| Does the candidate demonstrate being in the top 10% of: | Yes | No |
-| :------------- | :------------- | :------------- |
-| Technical aptitude | | |
-| UX | | |
-| Communication skills | | | |
+
+**Question 2: Hello,**
+
+Sorry to give you the kind of feedback that I know you do not want to hear, but I really hate the new dashboard design. Clearing and deleting indexes are now several clicks away. I am needing to use these features while iterating, so this is inconvenient.
+
+Regards, Matt
+
+**Questions 2 Answer**
+
+Hey Matt,
+
+Any feedback is good feedback, no need to apologize. I am sorry that the new user experience has not been treating you well. I can take this back into our product team and see what they think, or see if we have other customers experiencing the same issue, and their workaround/feedback they have sent in. Thank you for bringing this to our attention.
+
+Cheers, Nick
+
+
+
+------------
+
+
+
+**Question 3: Hi,**
+
+I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
+
+Regards, Leo
+
+**Question 3 Answer:**
+
+Hey Leo,
+
+We have many out of the box integrations in our documentation that should allow you to be all set up quite fast. It will not take you too much development work to get a simple search menu working, I think a good place to start would be in our Getting Started (https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/getting-started/) documentation. As for a high level process, you would need to first import your formatted JSON data into Algolia. After your data is imported, a basic implementation would be a few snippets of JS code that tie into a front end component that will render the results you imported into Algolia. If you need any specific details on implementation when you start, feel free to email me and we can go over it together.
+
+Cheers, Nick
