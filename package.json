@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "parcel index.html --port 3000",
-    "build": "parcel build index.html --public-url https://nicholasnguyen06.github.io/sa-assignment/",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
